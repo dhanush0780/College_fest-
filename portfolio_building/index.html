@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIVACITY 2026 | Annual College Cultural & Tech Fest</title>
+  <meta name="description" content="Official booking and registration portal for Vivacity 2026 - 3 days of music, dance, coding, and celebrity pro-nights." />
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-accent">⚡</span> VIVACITY <span class="badge-year">'26</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#schedule" class="nav-link">Schedule</a>
+        <a href="#passes" class="nav-link">Passes</a>
+        <a href="#faqs" class="nav-link">FAQs</a>
+        <a href="#my-tickets" class="nav-link" id="navMyTicketsBtn">My Tickets (<span id="ticketCountBadge">0</span>)</a>
+        <a href="#passes" class="btn btn-primary nav-cta">Book Now</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="container hero-content">
+      <div class="hero-pill">
+        <span class="pulse-dot"></span>
+        Apex Institute of Technology Presents
+      </div>
+      <h1 class="hero-title">
+        The Biggest College Fest of the Year <br />
+        <span class="gradient-text">VIVACITY 2026</span>
+      </h1>
+      <p class="hero-subtitle">
+        3 electrifying days of live music, coding hackathons, street dance battles, and mega celebrity pro-nights. Grab your passes before early bird prices end!
+      </p>
+
+      <!-- Event Quick Meta -->
+      <div class="hero-meta-strip">
+        <div class="meta-item">
+          <span class="meta-icon">📅</span>
+          <div>
+            <strong>November 14 - 16, 2026</strong>
+            <p>3 Action-Packed Days</p>
+          </div>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <span class="meta-icon">📍</span>
+          <div>
+            <strong>Main University Campus</strong>
+            <p>New Delhi / Open Grounds</p>
+          </div>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <span class="meta-icon">🏆</span>
+          <div>
+            <strong>₹3,50,000+ Prizes</strong>
+            <p>25+ Inter-College Events</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="hero-actions">
+        <a href="#passes" class="btn btn-primary btn-lg">
+          Book Passes Now 🎟️
+        </a>
+        <a href="#events" class="btn btn-secondary btn-lg">
+          Explore Events 🚀
+        </a>
+      </div>
+
+      <!-- Countdown Timer -->
+      <div class="countdown-wrapper">
+        <div class="countdown-label">FEST COUNTDOWN</div>
+        <div class="countdown-grid" id="countdown">
+          <div class="countdown-box">
+            <span class="number" id="days">00</span>
+            <span class="unit">Days</span>
+          </div>
+          <div class="countdown-box">
+            <span class="number" id="hours">00</span>
+            <span class="unit">Hours</span>
+          </div>
+          <div class="countdown-box">
+            <span class="number" id="minutes">00</span>
+            <span class="unit">Mins</span>
+          </div>
+          <div class="countdown-box">
+            <span class="number" id="seconds">00</span>
+            <span class="unit">Secs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Experience The Buzz</span>
+        <h2 class="section-title">Why You Can't Miss Vivacity</h2>
+        <p class="section-desc">
+          Bringing together over 12,000 students from 75+ universities across the country for an unforgettable celebration of creativity, technology, and youth culture.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎸</div>
+          <h3>Star Celebrity Pro-Nights</h3>
+          <p>Live performances by India's top indie-rock artists, DJ headliners, and stand-up comedians on the grand stage.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💻</div>
+          <h3>24-Hour Hackathon & Esports</h3>
+          <p>Compete in the annual HackVibe with industry mentors, plus high-stakes Valorant and BGMI tournaments.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎭</div>
+          <h3>Cultural Showcases</h3>
+          <p>Western & classical group dances, fashion parade, street play (Nukkad Natak), and battle of the bands.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🍔</div>
+          <h3>Food & Carnival Streets</h3>
+          <p>Over 40 food trucks, flea market pop-ups, arcade games, and photo booths open all day and night.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section class="section events-section" id="events">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Competitions & Stages</span>
+        <h2 class="section-title">Featured Fest Events</h2>
+        <p class="section-desc">Choose from over 25+ flagship events across technical, music, arts, and gaming tracks.</p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="category-filters" id="categoryFilters">
+        <button class="filter-btn active" data-category="all">All Events</button>
+        <button class="filter-btn" data-category="music">Music & Pro-Night</button>
+        <button class="filter-btn" data-category="tech">Tech & Gaming</button>
+        <button class="filter-btn" data-category="dance">Dance & Drama</button>
+        <button class="filter-btn" data-category="arts">Arts & Lifestyle</button>
+      </div>
+
+      <!-- Events Grid -->
+      <div class="events-grid" id="eventsGrid">
+        <!-- Event Cards dynamically generated via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule Section -->
+  <section class="section schedule-section" id="schedule">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Fest Timeline</span>
+        <h2 class="section-title">3-Day Event Schedule</h2>
+        <p class="section-desc">Plan your weekend with our day-by-day itinerary of competitions and star evenings.</p>
+      </div>
+
+      <!-- Schedule Day Tabs -->
+      <div class="schedule-tabs" id="scheduleTabs">
+        <button class="tab-btn active" data-day="day1">Day 1 • Nov 14 (Ignition)</button>
+        <button class="tab-btn" data-day="day2">Day 2 • Nov 15 (Euphoria)</button>
+        <button class="tab-btn" data-day="day3">Day 3 • Nov 16 (Grand Finale)</button>
+      </div>
+
+      <div class="timeline-container" id="timelineContainer">
+        <!-- Schedule content populated via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Passes / Booking Section -->
+  <section class="section passes-section" id="passes">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Simple & Transparent Passes</span>
+        <h2 class="section-title">Choose Your Fest Pass</h2>
+        <p class="section-desc">All passes include official fest wristband, entry to stalls, and digital access pass.</p>
+      </div>
+
+      <div class="passes-grid">
+        <!-- Pass Card 1: 1-Day Pass -->
+        <div class="pass-card" data-pass="Single Day Pass" data-price="199">
+          <div class="pass-header">
+            <span class="pass-badge">Popular for Locals</span>
+            <h3 class="pass-name">Single Day Pass</h3>
+            <p class="pass-desc">Perfect if you only want to visit for a specific day or competition.</p>
+            <div class="pass-price">
+              <span class="currency">₹</span>
+              <span class="amount">199</span>
+              <span class="per">/ attendee</span>
+            </div>
+          </div>
+          <ul class="pass-features">
+            <li>✓ Entry for any 1 selected day</li>
+            <li>✓ Access to open-air campus stalls & food court</li>
+            <li>✓ Spectator access to all daytime competitions</li>
+            <li>✓ General standing access for Day's cultural night</li>
+            <li>✕ Hackathon registration (requires Tech Pass)</li>
+          </ul>
+          <button class="btn btn-outline pass-select-btn" onclick="openBookingModal('Single Day Pass', 199)">Select Single Day</button>
+        </div>
+
+        <!-- Pass Card 2: All-Access (Featured) -->
+        <div class="pass-card featured" data-pass="All-Access VIP Pass" data-price="499">
+          <div class="popular-ribbon">BEST VALUE</div>
+          <div class="pass-header">
+            <span class="pass-badge featured-badge">Recommended</span>
+            <h3 class="pass-name">All-Access Fest Pass</h3>
+            <p class="pass-desc">The complete 3-day experience including VIP front stage for Celebrity Night.</p>
+            <div class="pass-price">
+              <span class="currency">₹</span>
+              <span class="amount">499</span>
+              <span class="per">/ 3 days</span>
+            </div>
+          </div>
+          <ul class="pass-features">
+            <li>✓ Unlimited 3-Day entry badge & wristband</li>
+            <li>✓ VIP Front Arena entry to Celebrity Pro-Night</li>
+            <li>✓ Entry to all daytime cultural & literary events</li>
+            <li>✓ Official Vivacity '26 Souvenir Kit & Sticker pack</li>
+            <li>✓ Fast-track entry gate lane (Zero queue)</li>
+          </ul>
+          <button class="btn btn-primary pass-select-btn" onclick="openBookingModal('All-Access Fest Pass', 499)">Get All-Access Pass</button>
+        </div>
+
+        <!-- Pass Card 3: Team / Tech Combo -->
+        <div class="pass-card" data-pass="Team / Tech Pass (Up to 4)" data-price="899">
+          <div class="pass-header">
+            <span class="pass-badge">For Competitors</span>
+            <h3 class="pass-name">Team & Tech Combo</h3>
+            <p class="pass-desc">Ideal for teams entering HackVibe, Esports, or Battle of Bands.</p>
+            <div class="pass-price">
+              <span class="currency">₹</span>
+              <span class="amount">899</span>
+              <span class="per">/ team of 4</span>
+            </div>
+          </div>
+          <ul class="pass-features">
+            <li>✓ Full 3-day entry for team of up to 4 members</li>
+            <li>✓ Official entry slot for 24-hr Hackathon or LAN finals</li>
+            <li>✓ High-speed gigabit Wi-Fi & workspace power spots</li>
+            <li>✓ Meals & midnight energy drinks during hackathon</li>
+            <li>✓ Standard access to all evening concerts</li>
+          </ul>
+          <button class="btn btn-outline pass-select-btn" onclick="openBookingModal('Team / Tech Pass (Up to 4)', 899)">Select Team Pass</button>
+        </div>
+      </div>
+
+      <!-- Quick Booking Help Banner -->
+      <div class="help-banner">
+        <span>💡 <strong>College Delegation or Bulk Group (>15 students)?</strong> Contact our hospitality desk for 20% group rebate at <a href="mailto:delegates@vivacityfest.in">delegates@vivacityfest.in</a></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Booked Tickets Section (Interactive View) -->
+  <section class="section my-tickets-section" id="my-tickets">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Instant Verification</span>
+        <h2 class="section-title">Your Confirmed Fest Passes</h2>
+        <p class="section-desc">Passes booked on this browser are saved here. Show this digital pass with QR code at the security entrance gate.</p>
+      </div>
+
+      <div id="ticketsList" class="tickets-container">
+        <!-- Rendered by JavaScript -->
+        <div class="no-tickets" id="noTicketsPlaceholder">
+          <div class="no-ticket-icon">🎟️</div>
+          <h3>No passes booked yet</h3>
+          <p>Choose your pass above and complete the simple booking form. Your digital badge will appear right here!</p>
+          <a href="#passes" class="btn btn-primary">Browse Passes</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs Section -->
+  <section class="section faqs-section" id="faqs">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Got Questions?</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Everything you need to know about entry, college ID requirements, and event participation.</p>
+      </div>
+
+      <div class="faq-accordion" id="faqAccordion">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can students from other colleges attend Vivacity 2026?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, absolutely! Vivacity is an open national fest. Students from any recognized university, college, or institute can attend and participate in competitions by showing a valid Student ID along with their fest pass.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What documents are required at the entrance gate?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>You need to show the digital pass on your phone (or a printed copy) containing your unique QR Code, plus your original College Photo ID card or Government ID (Aadhaar/Driver's License).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I cancel or transfer my pass to a friend?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Passes are generally non-refundable. However, you can transfer attendee details up to 48 hours prior to the fest by emailing support with your Booking ID and new attendee's college credentials.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is hostel accommodation provided for outstation participants?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, separate sanitized hostel accommodations for male and female outstation participants are available on campus at a nominal charge of ₹250/night including breakfast. You can opt-in upon confirmation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo">
+          <span class="logo-accent">⚡</span> VIVACITY <span class="badge-year">'26</span>
+        </a>
+        <p>The Annual National Cultural & Tech Extravaganza of Apex Institute of Technology.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Instagram">📸 Instagram</a>
+          <a href="#" class="social-link" title="YouTube">▶ YouTube</a>
+          <a href="#" class="social-link" title="Discord">💬 Discord</a>
+        </div>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Quick Navigation</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#events">Competitions</a></li>
+          <li><a href="#passes">Ticket Passes</a></li>
+          <li><a href="#schedule">Full Schedule</a></li>
+          <li><a href="#my-tickets">My Booked Passes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Student Council Desk</h4>
+        <p>📍 Apex Campus, Sector 62, New Delhi NCR</p>
+        <p>📞 Helpline: +91 98765 43210</p>
+        <p>✉️ Email: fest@vivacity2026.edu</p>
+        <p>⏰ Desk Hours: 10:00 AM – 7:00 PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Vivacity Fest Organizing Committee. Built with passion for college students everywhere.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking Modal Dialog -->
+  <div class="modal-backdrop" id="bookingModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-header">
+        <span class="modal-tag">Official Registration</span>
+        <h3 id="modalPassTitle">Book Your Fest Pass</h3>
+        <p class="modal-sub">Fill in your details to generate your instant digital entry e-pass.</p>
+      </div>
+
+      <form id="bookingForm" class="booking-form" onsubmit="handleBookingSubmit(event)">
+        <!-- Pass Type Hidden / Pre-selected -->
+        <div class="form-group">
+          <label for="formPassType">Selected Pass Tier</label>
+          <select id="formPassType" class="form-control" required onchange="updateModalPrice()">
+            <option value="Single Day Pass" data-price="199">Single Day Pass - ₹199</option>
+            <option value="All-Access Fest Pass" data-price="499" selected>All-Access Fest Pass - ₹499</option>
+            <option value="Team / Tech Pass (Up to 4)" data-price="899">Team / Tech Pass (Up to 4) - ₹899</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" class="form-control" placeholder="e.g. Rahul Sharma" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" class="form-control" placeholder="rahul@gmail.com" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone / WhatsApp Number *</label>
+            <input type="tel" id="phone" class="form-control" placeholder="+91 9876543210" pattern="[0-9+ \-]{10,15}" required />
+          </div>
+          <div class="form-group">
+            <label for="college">College / University Name *</label>
+            <input type="text" id="college" class="form-control" placeholder="e.g. Delhi University / IIT Delhi" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="studentId">Student Roll No. / College ID *</label>
+            <input type="text" id="studentId" class="form-control" placeholder="e.g. 2023CSB1042" required />
+          </div>
+          <div class="form-group">
+            <label for="ticketQuantity">Quantity</label>
+            <div class="quantity-control">
+              <button type="button" class="qty-btn" onclick="changeQuantity(-1)">-</button>
+              <input type="number" id="ticketQuantity" class="form-control qty-input" value="1" min="1" max="10" readonly />
+              <button type="button" class="qty-btn" onclick="changeQuantity(1)">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Promo Code Field -->
+        <div class="form-group promo-group">
+          <label for="promoCode">Promo / College Discount Code</label>
+          <div class="promo-input-wrap">
+            <input type="text" id="promoCode" class="form-control" placeholder="Try 'FEST10' for 10% off" style="text-transform: uppercase;" />
+            <button type="button" class="btn btn-secondary promo-btn" onclick="applyPromoCode()">Apply</button>
+          </div>
+          <p id="promoMessage" class="promo-msg"></p>
+        </div>
+
+        <!-- Price Summary Breakdown -->
+        <div class="price-summary">
+          <div class="summary-line">
+            <span>Pass Base Price:</span>
+            <span id="summaryBasePrice">₹499</span>
+          </div>
+          <div class="summary-line">
+            <span>Quantity:</span>
+            <span id="summaryQty">1</span>
+          </div>
+          <div class="summary-line discount-line" id="discountRow" style="display: none;">
+            <span>Promo Discount (10%):</span>
+            <span id="summaryDiscount">- ₹0</span>
+          </div>
+          <div class="summary-line total-line">
+            <strong>Total Amount:</strong>
+            <strong id="summaryTotal">₹499</strong>
+          </div>
+        </div>
+
+        <div class="form-terms">
+          <label class="checkbox-label">
+            <input type="checkbox" required checked />
+            <span>I agree to follow the campus code of conduct and present my college ID at the entry gate.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block submit-booking-btn">
+          Confirm & Generate E-Pass 🚀
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Booking Success Confirmation Modal -->
+  <div class="modal-backdrop" id="successModal">
+    <div class="modal-box success-modal-box">
+      <div class="success-icon-wrap">🎉</div>
+      <h2>Pass Booked Successfully!</h2>
+      <p class="success-sub">Your digital e-pass has been generated and saved. Show the QR code below at the fest registration desk.</p>
+
+      <!-- Digital E-Pass Card Preview -->
+      <div class="e-pass-badge" id="ePassPreview">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn btn-primary" onclick="printPass()">🖨️ Print / Save Pass</button>
+        <button class="btn btn-secondary" onclick="closeSuccessModal()">Done & View All</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
